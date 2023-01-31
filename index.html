@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <meta charset="UTF-8">
+    <div class="principal">
+        <div>
+            <h1>Insira os telefones aqui: </h1>
+            <textarea class="primeiraCaixa" name="lista_sem_bots" id="textNoBots" cols="50" v-model="" rows="20"></textarea>
+        </div>     
+
+        <div class="meio">
+            <div class="texto">
+                <label  for="qtd">Intervalo de envio:</label>
+                <select name="qtd" id="qtd" class="numeros">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            
+    
+            <button type='submit' id='enviar' class="enviar" onclick="receberLista()">Gerar Lista</button>
+     
+        </div>
+
+        <div class="segundaCaixa">
+            <textarea  name="Lista_com_bots" id="textBots" cols="50" rows="20"></textarea>
+        </div>
+        
+
+
+    </div>
+    <title>Document</title>
+
+    <script src="./incluiBots.js"></script>
+</body>
+
+</html>
