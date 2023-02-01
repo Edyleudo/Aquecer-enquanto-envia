@@ -1,6 +1,6 @@
 let original = [];
 var novoArray = [];
-let arrayBots = [5511999910621, 5521999816059, 556140040001, 551133350237, 5511974627106, 552140420321]
+let arrayBots = [5511999910621, 5521999816059, 556140040001, 551133350237, 5511974627106]
 let cont = 0;
 let vetorOriginal = document.getElementById("textNoBots").value
 
