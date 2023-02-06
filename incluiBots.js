@@ -1,6 +1,6 @@
 let original = [];
 var novoArray = [];
-let arrayBots = [5511999910621, 5521999816059, 556140040001, 551133350237, 5511974627106]
+let arrayBots = [11999910621, 21999816059, 6140040001, 1133350237, 11974627106]
 let cont = 0;
 let vetorOriginal = document.getElementById("textNoBots").value
 
@@ -15,14 +15,14 @@ for (let i = 0; i < original.length; i++) {
 
     if (cont == qtdIntervalo) {
         for (let j = 0; j < arrayBots.length; j++) {
-            novoArray.push(arrayBots[j].toString().substr(2));
+            novoArray.push(arrayBots[j].toString());
         }
         cont = 0;
         i--;
     }
     else {
         cont++;  
-        novoArray.push(original[i].toString().substr(2));
+        novoArray.push(original[i].toString());
     }
 
 }
