@@ -16,23 +16,20 @@
 
         <div class="meio">
             <div class="texto">
-                <label  for="qtd">Intervalo de envio:</label>
+                <label  for="qtd">Sua lista possui o +55?:</label>
                 <select name="qtd" id="qtd" class="numeros">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5" selected>5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
+                    <option value="Não" selected>Não</option>
+                    <option value="1">possui apenas o 55</option>
+                    <option value="2">já possui o +55</option>
+                    
+                    
                 </select>
             </div>
             
     
             <button type='submit' id='enviar' class="enviar" onclick="receberLista()">Gerar Lista</button>
+
+            <h5 class="mensagem">Se sua lista já possuir o +55 no inicio do numero, este gerador irá apenas organiza-lo entre virgulas para colocar na extensão</h3>
      
         </div>
 

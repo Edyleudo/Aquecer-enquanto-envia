@@ -10,19 +10,34 @@ var ListaEnviada = document.getElementById("textNoBots").value;
 var qtdIntervalo = document.getElementById("qtd").value;
 console.log(qtdIntervalo);
 original = ListaEnviada.split("\n")
+var sem55 = "+55";
+var com55 = "+";
 
 for (let i = 0; i < original.length; i++) {
 
-    if (cont == qtdIntervalo) {
-        for (let j = 0; j < arrayBots.length; j++) {
-            novoArray.push(arrayBots[j].toString());
-        }
-        cont = 0;
-        i--;
+    // if (cont == qtdIntervalo) {
+    //     for (let j = 0; j < arrayBots.length; j++) {
+    //         novoArray.push(arrayBots[j].toString());
+    //     }
+    //     cont = 0;
+    //     i--;
+    // }
+    // else {
+    //     cont++;  
+    //     novoArray.push(original[i].toString());
+    // }
+
+    if (qtdIntervalo == "1"){
+        novoArray.push(com55.concat(original[i].toString()));
+    }
+
+    else if(qtdIntervalo == "Não") {
+        novoArray.push(sem55.concat(original[i].toString()));
+
     }
     else {
-        cont++;  
         novoArray.push(original[i].toString());
+
     }
 
 }

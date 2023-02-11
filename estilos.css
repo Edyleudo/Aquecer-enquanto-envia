@@ -8,6 +8,8 @@ body {
 .numeros {
     text-align: center;
     font-size: 15px;
+    border-radius: 10px;
+
        
 }
 
@@ -16,6 +18,15 @@ body {
     font-weight: bold;
     margin-top: 150px;
     
+}
+
+.mensagem{
+    color: red;
+    margin: auto;
+    text-align: center;
+    width: 200px; 
+
+
 }
 
 .enviar {
